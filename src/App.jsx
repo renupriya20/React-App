@@ -4,9 +4,9 @@
 // import Heart from "./allTopics/02_States/Heart";
 // import CounterFBC from "./allTopics/02_States/CounterFBC";
 // import ToogleComponent  from "./allTopics/02_States/Toogle";
-
-import ControlledForm from "./allTopics/08_ControlledForms/ControlledForm";
-
+// import Logo from "./allTopics/Flipkart/Navbar/Logo";
+// import SearchBar from "./allTopics/Flipkart/Navbar/SearchBar";
+// import Travel from "./allTopics/Flipkart/Navbar/Travel";
 // import StatesinCBC from "./allTopics/02_States/StatesinCBC";
 // import Parent1 from "./allTopics/03_Props/Parent1";
 // import DrillingParent from "./allTopics/04_PropsDrilling/DrillingParent";
@@ -14,23 +14,38 @@ import ControlledForm from "./allTopics/08_ControlledForms/ControlledForm";
 // import UpLiftingParent from "./allTopics/06_StateUpLifting/UpLiftingParent";
 // import UserLists from "./allTopics/07_Lists/UserLists";
 
+import TodoWrapper from "./allTopics/10_TodoApp/TodoWrapper";
+
+// import ControlledForm1 from "./allTopics/08_ControlledForms/ControlledForms1";
+// import ControlledForms2 from "./allTopics/08_ControlledForms/ControlledForms2";
+// import Card from "./allTopics/09_ReactCss/Card";
+// import InlineCss from "./allTopics/09_ReactCss/InlineCss";
+// import Header from "./components/Header";
+// import Categories from "./allTopics/Flipkart/Categories/Categories";
 const App = () => {
-    
+
     return (
         <>
-          {/* <Functionbased/> */}
-          {/* <ClassBased/> */}
-          {/* <StatesinFBC/> */}
-          {/* <Heart/> */}
-          {/* <ToogleComponent/> */}
-          {/* <CounterFBC/> */}
-          {/* <StatesinCBC/> */}
-          {/* <Parent1/> */}
-          {/* <DrillingParent/> */}
-          {/* <CallbackParent/> */}
-          {/* <UpLiftingParent/> */}
-          {/* <UserLists/> */}
-          <ControlledForm/>
+            {/* <Functionbased/> */}
+            {/* <ClassBased/> */}
+            {/* <StatesinFBC/> */}
+            {/* <Heart/> */}
+            {/* <ToogleComponent/> */}
+            {/* <CounterFBC/> */}
+            {/* <StatesinCBC/> */}
+            {/* <Parent1/> */}
+            {/* <DrillingParent/> */}
+            {/* <CallbackParent/> */}
+            {/* <UpLiftingParent/> */}
+            {/* <UserLists/> */}
+            {/* <ControlledForm1/> */}
+            {/* <ControlledForms2/> */}
+            {/* <InlineCss/> */}
+            {/* <Card/> */}
+            <TodoWrapper/>
+            {/* <Header/> */}
+            {/* <Categories/> */}
+
         </>
     );
 };

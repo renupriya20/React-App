@@ -1,7 +1,6 @@
 import { useState } from "react";
 
 const CounterFBC = () => {
-
     const [state, setState] = useState({count:0});
     console.log(state);
 
@@ -10,6 +9,7 @@ const CounterFBC = () => {
     return (
         <>
         <h1>Counter FBC Component {state.count}</h1>
+       
         <button onClick={increment}>Increment</button>
         </>
     );

@@ -1,0 +1,58 @@
+/* components/Header/Header.module.css */
+.header {
+    background-color: white;
+    color: white;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.topBar {
+    padding: 8px 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.leftSection {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+}
+
+.travel {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 15px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+
+
+.searchContainer {
+display: flex;
+gap: 6px;
+    max-width: 580px;
+    border-color: blue;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+   
+}
+.forYou {
+    color: red;
+}
+
+.header {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+}

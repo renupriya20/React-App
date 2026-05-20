@@ -1,0 +1,11 @@
+.todoList {
+    margin-top: 1rem;
+}
+.todoItem {
+    padding: 10px 14px;
+    border: 1px solid #ddd;
+    border-color: 6px;
+    margin-bottom: 8px;
+    background-color: #fff;
+    font-size: 15px;
+}

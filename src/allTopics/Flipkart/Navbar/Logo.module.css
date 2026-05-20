@@ -1,0 +1,23 @@
+.logo {
+    background-color: #ffe51fff;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 8px 16px;
+    border-radius: 10px;
+    width: fit-content;
+    height: auto;
+    border: none;
+}
+
+.fIcon {
+    color: #2874f0;
+    filter: drop-shadow(1px 1px 3px rgba(0, 0, 0, 0.3));
+}
+.logoText {
+    color: #000;
+    font-size: 15px;
+    font-weight: 700;
+    font-style: italic;
+    filter: drop-shadow(1px 1px 3px rgba(0, 0, 0, 0.3));
+}

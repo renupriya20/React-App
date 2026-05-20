@@ -1,0 +1,35 @@
+/* components/Header/SearchBar.module.css */
+.searchBar {
+    width: 100%;
+    background-color: blue;
+    align-items: center;
+    
+}
+
+.searchBox {
+    border-color: blue;
+    background:white;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    padding: 8px 12px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.searchIcon {
+    color: gray;
+    margin-right: 8px;
+    font-size: 18px;
+}
+
+.searchInput {
+    border: none;
+    outline: none;
+    flex: 1;
+    font-size: 15px;
+    color: #212121;
+}
+
+.searchInput::placeholder {
+    color: #878787;
+}
