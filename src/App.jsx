@@ -14,7 +14,10 @@
 // import UpLiftingParent from "./allTopics/06_StateUpLifting/UpLiftingParent";
 // import UserLists from "./allTopics/07_Lists/UserLists";
 
+import { useState } from "react";
 import TodoWrapper from "./allTopics/10_TodoApp/TodoWrapper";
+import UncontrolledForms from "./allTopics/11_UncontrolledForms/UncontrolledForms";
+import LifeCycleCBC from "./allTopics/12_LifeCycle/LifeCycleCBC";
 
 // import ControlledForm1 from "./allTopics/08_ControlledForms/ControlledForms1";
 // import ControlledForms2 from "./allTopics/08_ControlledForms/ControlledForms2";
@@ -24,6 +27,8 @@ import TodoWrapper from "./allTopics/10_TodoApp/TodoWrapper";
 // import Categories from "./allTopics/Flipkart/Categories/Categories";
 const App = () => {
 
+    const [toggle, setToggle] = useState(false);
+    const handleToggle = () => setToggle((prev) => !prev);
     return (
         <>
             {/* <Functionbased/> */}
@@ -42,9 +47,12 @@ const App = () => {
             {/* <ControlledForms2/> */}
             {/* <InlineCss/> */}
             {/* <Card/> */}
-            <TodoWrapper/>
+            {/* <TodoWrapper/> */}
             {/* <Header/> */}
             {/* <Categories/> */}
+            {/* <UncontrolledForms/> */}
+            <button onClick={handleToggle}>toggle me</button>
+            {toggle && <LifeCycleCBC/>}
 
         </>
     );
