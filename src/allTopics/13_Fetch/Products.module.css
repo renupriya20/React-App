@@ -1,0 +1,162 @@
+/* ── Page ── */
+.products-page {
+    min-height: 100vh;
+    background: #f4f1ec;
+    padding: 48px 24px;
+    font-family: 'Georgia', serif;
+}
+
+/* ── Heading ── */
+.products-heading {
+    text-align: center;
+    font-size: clamp(2rem, 5vw, 3.5rem);
+    font-weight: 700;
+    letter-spacing: -1px;
+    color: #1a1a1a;
+    margin-bottom: 48px;
+    position: relative;
+}
+
+.products-heading::after {
+    content: '';
+    display: block;
+    width: 60px;
+    height: 3px;
+    background: #c8553d;
+    margin: 12px auto 0;
+    border-radius: 2px;
+}
+
+/* ── Status text ── */
+.products-status {
+    text-align: center;
+    font-size: 1.1rem;
+    color: #888;
+    margin-top: 80px;
+}
+
+/* ── Grid ── */
+.products-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+    gap: 28px;
+    max-width: 1300px;
+    margin: 0 auto;
+}
+
+/* ── Card ── */
+.product-card {
+    background: #fff;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.07);
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+    display: flex;
+    flex-direction: column;
+}
+
+.product-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 12px 32px rgba(0, 0, 0, 0.13);
+}
+
+/* ── Image wrapper ── */
+.product-img-wrap {
+    position: relative;
+    background: #f9f7f4;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 220px;
+    overflow: hidden;
+}
+
+.product-img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    padding: 16px;
+    transition: transform 0.3s ease;
+}
+
+.product-card:hover .product-img {
+    transform: scale(1.05);
+}
+
+/* ── Price badge ── */
+.product-price {
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    background: #c8553d;
+    color: #fff;
+    font-size: 0.85rem;
+    font-weight: 700;
+    padding: 4px 10px;
+    border-radius: 20px;
+    font-family: 'Courier New', monospace;
+    letter-spacing: 0.5px;
+}
+
+/* ── Info block ── */
+.product-info {
+    padding: 18px 20px 20px;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.product-title {
+    font-size: 1rem;
+    font-weight: 700;
+    color: #1a1a1a;
+    margin: 0 0 8px;
+    line-height: 1.35;
+}
+
+.product-desc {
+    font-size: 0.85rem;
+    color: #666;
+    line-height: 1.6;
+    margin: 0 0 16px;
+    display: -webkit-box;
+    /* -webkit-line-clamp: 3; */
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    flex: 1;
+}
+
+/* ── Footer row ── */
+.product-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 1px solid #f0ece5;
+    padding-top: 12px;
+    margin-top: auto;
+}
+
+.product-category {
+    font-size: 0.72rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #aaa;
+    font-family: 'Courier New', monospace;
+}
+
+.product-rating {
+    font-size: 0.82rem;
+    color: #444;
+    font-weight: 600;
+}
+
+/* ── Responsive ── */
+@media (max-width: 480px) {
+    .products-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .products-page {
+        padding: 32px 16px;
+    }
+}

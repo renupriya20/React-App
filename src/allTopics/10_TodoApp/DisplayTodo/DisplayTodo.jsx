@@ -3,17 +3,19 @@ import style from "./DisplayTodo.module.css";
 const DisplayTodo = ({ allTodos, handleDeleteTodo, handelEditTodo }) => {
 
     return (
-        <div>
-            {allTodos.length === 0 ? ( <p> No Todos Available</p> ) : ( <section>
+        <div className={style.todosContainer}>
+            {allTodos.length === 0 ? ( <p> No Todos Available</p> ) :
+             ( 
+             <section className={style.todosWrapper}>
 
                 {allTodos.map((todo) => {
                     let { id, text } = todo;
                     return (
-                        <div key={id}>
+                        <div key={id} className={style.todo}>
                             <h3>{text}</h3>
-                            <button onClick={() => handelEditTodo(id)}>Edit</button>
+                            <button className={style.editBtn} onClick={() => handelEditTodo(id)}>Edit</button>
                             
-                            <button onClick={() => handleDeleteTodo(id)}>Delete</button>
+                            <button  className={style.deleteBtn} onClick={() => handleDeleteTodo(id)}>Delete</button>
                         </div>
                     )
                 })}

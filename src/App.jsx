@@ -18,6 +18,11 @@ import { useState } from "react";
 import TodoWrapper from "./allTopics/10_TodoApp/TodoWrapper";
 import UncontrolledForms from "./allTopics/11_UncontrolledForms/UncontrolledForms";
 import LifeCycleCBC from "./allTopics/12_LifeCycle/LifeCycleCBC";
+import LifeCycleFBC from "./allTopics/12_LifeCycle/LifeCycleFBC";
+import Users from "./allTopics/12_LifeCycle/Users";
+import Products from "./allTopics/13_Fetch/Products";
+import Reducer from "./allTopics/15_Reducer/Reducer";
+import ProductsCart from "./allTopics/14_ProductsTask/ProductsCart";
 
 // import ControlledForm1 from "./allTopics/08_ControlledForms/ControlledForms1";
 // import ControlledForms2 from "./allTopics/08_ControlledForms/ControlledForms2";
@@ -51,8 +56,15 @@ const App = () => {
             {/* <Header/> */}
             {/* <Categories/> */}
             {/* <UncontrolledForms/> */}
-            <button onClick={handleToggle}>toggle me</button>
-            {toggle && <LifeCycleCBC/>}
+            {/* <button onClick={handleToggle}>toggle me</button> */}
+            {/* {toggle && <LifeCycleCBC/>} */}
+            {/* <LifeCycleFBC/> */}
+            {/* <button onClick={handleToggle}>toggle me </button> */}
+          {/* {toggle && <Users/>} */}
+            {/* <button onClick={handleToggle}>toggle me </button> */}
+          {/* { toggle && <Products/>} */}
+          {/* <Reducer/> */}
+          <ProductsCart/>
 
         </>
     );
